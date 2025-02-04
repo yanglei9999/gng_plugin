@@ -1,7 +1,7 @@
-# WXT + Vue 3
+# 这是一个 WXT 项目用来开发 chrome扩展
 
-This template should help get you started developing with Vue 3 in WXT.
+## 功能描述
 
-## Recommended IDE Setup
+点击扩展图标时，将打开一个新的唯一的标签页，并载入指定的内容。
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar).
+#

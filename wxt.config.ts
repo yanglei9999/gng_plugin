@@ -5,6 +5,8 @@ export default defineConfig({
   extensionApi: 'chrome',
   modules: ['@wxt-dev/module-vue'],
   manifest: {
-    permissions: ['storage', 'tabs']
+    action: {},
+    side_panel: {default_path:"/sidepanel.html"},
+    permissions: ['storage', 'sidePanel', 'alarms']
   }
 });
