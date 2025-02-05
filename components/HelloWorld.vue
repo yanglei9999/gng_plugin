@@ -1,20 +1,24 @@
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { ref, getCurrentInstance } from 'vue';
+
 
 defineProps({
   msg: String,
 });
 
 const count = ref(0);
+const { proxy } = getCurrentInstance()!
+const msg2 = proxy?.__("helloWorld")
+
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
   <h1 class="text-3xl font-bold underline">
-    Hello world!
+    {{ __('helloWorld') }}
   </h1>
-  <p class="p-4 bg-teal-300">
-    nihao
+  <p class="p-4 bg-indigo-500 text-white">
+    {{ __('helloWorld') }}
   </p>
   <a-space wrap>
     <a-button type="primary">Primary Button</a-button>
@@ -26,7 +30,5 @@ const count = ref(0);
 </template>
 
 <style scoped>
-.read-the-docs {
-  color: #888;
-}
+
 </style>
