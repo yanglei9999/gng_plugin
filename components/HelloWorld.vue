@@ -10,6 +10,12 @@ const count = ref(0);
 
 <template>
   <h1>{{ msg }}</h1>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+  <p class="p-4 bg-teal-300">
+    nihao
+  </p>
   <a-space wrap>
     <a-button type="primary">Primary Button</a-button>
     <a-button>Default Button</a-button>
