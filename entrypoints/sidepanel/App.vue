@@ -1,23 +1,24 @@
 <script lang="ts" setup>
 import HelloWorld from '@/components/HelloWorld.vue';
+import Login from '@/components/Login.vue';
 </script>
 
 <template>
   
-  <HelloWorld msg="开始gogogo" />
+  <nav>
+    <a-space>
+      <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="/login">Login</RouterLink>
+    </a-space>
+    
+  </nav>
+
+  <main>
+    <RouterView />
+  </main>
+
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #54bc4ae0);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+
 </style>
