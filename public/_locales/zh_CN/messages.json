@@ -1,5 +1,11 @@
 {
     "helloWorld": {
         "message": "你好世界123"
+    },
+    "username_placeholder": {
+        "message": "请输入用户名"
+    },
+    "pwd_placeholder": {
+        "message": "请输入密码"
     }
 }

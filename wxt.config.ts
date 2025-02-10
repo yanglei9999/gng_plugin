@@ -9,7 +9,10 @@ export default defineConfig({
     default_locale: 'zh_CN',
     action: {},
     side_panel: {default_path:"/sidepanel.html"},
-    permissions: ['storage', 'sidePanel', 'alarms']
+    permissions: ['storage', 'sidePanel', 'alarms'],
+    host_permissions: [
+      "https://*/"
+    ],
   },
   
   vite: () => {
